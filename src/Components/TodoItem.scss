@@ -1,0 +1,77 @@
+.todo {
+  height: 48px;
+  width: 100%;
+  margin-top: 8px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  border-radius: 18px;
+  background: #2d4d8c;
+  border: 1px solid #0b1e45;
+
+  span {
+    width: 85%;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+
+    color: #dcdbac;
+  }
+
+  button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+
+    .delete {
+      font-size: x-large;
+      color: #dcdbac;
+    }
+
+    .edit {
+      font-size: x-large;
+      color: #dcdbac;
+    }
+  }
+}
+
+.edit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .edit-todo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .edit-write {
+      width: 100%;
+      height: 36px;
+      border: 1px solid #0b1e45;
+      border-radius: 18px;
+      background: #2d4d8c;
+      color: #dcdbac;
+      font-size: 20px;
+      font-weight: bold;
+      font-style: italic;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .edit-checked {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #0b1e45;
+    border-radius: 18px;
+    background: none;
+    color: #dcdbac;
+    font-size: 20px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
